@@ -1,3 +1,3 @@
 Spite wiki 2.0
 
-dont touch this.
+https://spelar1231.github.io/SpiteWiki/
