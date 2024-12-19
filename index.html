@@ -10,16 +10,22 @@
 
     <title>Spite Level Editor Wiki</title>
 
-    <!--Links to CSS files-->
+    <!-- Links to CSS files -->
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/topbar.css">
-    <!--Links to other stuff-->
-    <link rel="icon" href="https://github.com/Spelar1231/SpiteWiki/blob/main/Media/Images/Website_Images/pixel_deer.png?raw=true">
+    <!-- Links to JS files -->
+    <script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js"></script>
+    <script type="text/javascript" src="JS/purify.min.js"></script>
+    <!-- Links to fonts -->
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
 
 </head>
 
 <body>
-<!--Topbar-->
+<!-- Topbar -->
 <header class="topbar">
     <div class="container">
 
@@ -50,8 +56,22 @@
         </nav>
     </div>
 </header>
-<script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js"></script>
-<!--Text-->
-<h1>Spite Level Editor Wiki</h1>
+
+<!-- Text -->
+<div id="Markdown_text" class="markdown-text">
+    <script type="module">
+        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('MD/Welcome.md')
+                .then((response) => {
+                    return response.text();
+                })
+                .then((markdown_text) => {
+                    (document.getElementById('Markdown_text').innerHTML = marked(markdown_text));
+                })
+        })
+    </script>
+</div>
+
 </body>
 </html>
