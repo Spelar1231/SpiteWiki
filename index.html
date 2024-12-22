@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="CSS/topbar.css">
     <!-- Links to JS files -->
     <script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js"></script>
-    <script type="text/javascript" src="JS/purify.min.js"></script>
     <!-- Links to fonts -->
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -58,19 +57,24 @@
 </header>
 
 <!-- Text -->
-<div id="Markdown_text" class="markdown-text">
-    <script type="module">
-        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-        document.addEventListener("DOMContentLoaded", () => {
-            fetch('MD/Welcome.md')
-                .then((response) => {
-                    return response.text();
-                })
-                .then((markdown_text) => {
-                    (document.getElementById('Markdown_text').innerHTML = marked(markdown_text));
-                })
-        })
-    </script>
+
+<div class="content">
+    <div class="title">
+        <img class="title-image" src="Media/Images/Wiki_Images/Image_002.png" alt="An image of the Spite Level Editor. If you are seeing this then something probably went wrong or you are using screen reader mode.">
+        <h1 class="main-title">Spite Level Editor Wiki</h1>
+        <h2 class="subtitle">The official wiki for the Spite Level Editor.</h2>
+    </div>
+
+    <div class="main-content">
+        <h2>About</h2>
+        <br>
+        <p>The Spite Level Editor is a public level editor for ULTRAKILL. Where you can upload your level into Envy Level Loader at any time, no matter the quality.</p>
+        <p>In this wiki you will learn how to create levels, from start to finish. It is important to note that even if this wiki is for Spite LE, information given here can also be applied to the Rude Level Editor, however, Rude LE has some differences.</p>
+        <br>
+        <p>The wiki website has been created by <a>Alma(almaa_1.)</a> and the entries of the wiki have been created by <a>Alma</a> , <a>Doomah(doomahreal)</a> and by our <a>contributors</a></p>
+        <p>If you wish to contribute into the wiki, you can go into this <a>page</a> for more information.</p>
+    </div>
+
 </div>
 
 </body>
