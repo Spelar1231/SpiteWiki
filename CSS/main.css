@@ -9,6 +9,16 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
 p {
     font-family: "Roboto Thin", sans-serif;
     font-size: 18px;
