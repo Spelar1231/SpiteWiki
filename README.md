@@ -1,5 +1,6 @@
 # A still WIP Spite wiki 2.0
 ### Developed by: Alma
 ### [Website](https://spelar1231.github.io/SpiteWiki)
-
-Note: index.html acts as a main page.
+## Used libraries:
+1. [Marked.js](https://github.com/markedjs/marked)
+2. [DOMPurify](https://github.com/cure53/DOMPurify)
