@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
@@ -16,13 +14,10 @@
     <link rel="stylesheet" href="CSS/topbar.css">
     <link rel="stylesheet" href="CSS/welcome_page.css">
     <!-- Links to JS files -->
-    <script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js"></script>
+    <script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js" defer></script>
     <!-- Links to fonts -->
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-
-
 </head>
 
 <body>
@@ -36,19 +31,68 @@
             Spite Level Editor Wiki
         </div>
 
-        <label>
+        <label class="search-bar">
             <input type="text" placeholder="Search an entry...">
         </label>
 
+        <script>
+            // Opens a dropdown menu when the navbar buttons are pressed.
+            function OpenDropdown() {
+                const dropdown = document.getElementsByClassName("visibility")
+                dropdown.classList.toggle("visibility");
+            }
+
+        </script>
+
         <nav>
             <ul class="nav-links" style="height: 100%;">
-                <li><button type="button">Setup</button></li>
-                <li><button type="button">Tutorials</button></li>
-                <li><button type="button">Advanced Tutorials</button></li>
-                <li><button type="button">Components</button></li>
-                <li><button type="button">Misc</button></li>
+                <li>
+                    <button id="nav-button" type="button" onclick="OpenDropdown()">Setup</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Vanity Setup</a></li>
+                        <li><a class="visibility" href="">Spite Setup</a></li>
+                        <li><a class="visibility" href="">Scene Setup</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" >Tutorials</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Level Structure</a></li>
+                        <li><a class="visibility" href="">Geometry</a></li>
+                        <li><a class="visibility" href="">Texturing</a></li>
+                        <li><a class="visibility" href="">Doors</a></li>
+                        <li><a class="visibility" href="">Encounters</a></li>
+                        <li><a class="visibility" href="">Lighting</a></li>
+                        <li><a class="visibility" href="">Optimization</a></li>
+                        <li><a class="visibility" href="">Compiling</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" onclick="OpenDropdown()">Advanced Tutorials</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Skulls/Buttons</a></li>
+                        <li><a class="visibility" href="">Advanced Encounters</a></li>
+                        <li><a class="visibility" href="">Custom Assets</a></li>
+                        <li><a class="visibility" href="">Custom Scripts<</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button type="button" onclick="OpenDropdown()"><!-- This button links to a webpage -->
+                    <a class="visibility">Components</a>
+                    </button>
+                </li>
+                <li>
+                    <button type="button" onclick="OpenDropdown()">Misc</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Credits</a></li>
+                        <li><a class="visibility" href="">Contribution</a></li>
+                        <li><a class="visibility" href="">Resources<</a></li>
+                        <li><a class="visibility" href="">Repository</a></li>
+                    </ul>
+                </li>
             </ul>
 
+            <!-- Burgar -->
             <div class="burger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -74,8 +118,7 @@
     The wiki website has been created by <a>Alma</a> and the entries of the wiki have been created by <a>Alma</a>, <a>Doomah</a> and by our <a>contributors</a>.
     If you wish to contribute into the wiki, you can go into this <a>page</a> for more information.</p>
 
-    <button type="button">Start Tutorial</button>
+    <!-- <button type="button">Start Tutorial</button> -->
 </div>
-
 </body>
 </html>
