@@ -1,6 +1,6 @@
 /* Style of the welcome page */
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,14 @@ body {
     justify-content: center;
     position: relative;
     text-align: center;
+
 }
 
 .content img {
     width: auto;
     height: 100vh;
     background-size: cover;
+    z-index: -1;
 }
 
 /* Title */
@@ -26,7 +28,7 @@ body {
     font-size: 3vw;
     font-weight: normal;
     position: absolute;
-    top: 18%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     overflow: visible;
@@ -38,7 +40,7 @@ body {
     font-size: 1.85vw;
     font-weight: normal;
     position: absolute;
-    top: 28%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -49,7 +51,7 @@ body {
     font-size: 1vw;
     font-weight: normal;
     position: absolute;
-    top: 38%;
+    top: 30%;
     left: 10%;
     right: 10%;
     text-align: justify;
@@ -61,6 +63,24 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+/* Style of the button */
+.content button {
+    position: absolute;
+    top: 55rem;
+    background-color: #375570;
+    border: none;
+    color: white;
+    padding: 2rem 10rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5rem;
+
+    font-family: "VCR OSD Mono", sans-serif;
+    font-size: 2rem;
+
     cursor: pointer;
 }
 
