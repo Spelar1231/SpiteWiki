@@ -1,0 +1,108 @@
+/* Style of the welcome page */
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style of the title */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.content img {
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Title */
+.content h1 {
+    font-family: "VCR OSD Mono", sans-serif;
+    font-size: 3vw;
+    font-weight: normal;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+}
+
+/* Subtitle */
+.content h2 {
+    font-family: "VCR OSD Mono", sans-serif;
+    font-size: 1.85vw;
+    font-weight: normal;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* About content */
+.content p {
+    font-family: "VCR OSD Mono", sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    right: 10%;
+    text-align: justify;
+    overflow: visible;
+}
+
+.content a {
+    font-family: "VCR OSD Mono", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* Style of the button */
+.content button {
+    background-color: #506f93;
+    border: none;
+    color: white;
+    padding:1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+        
+}
+
+/* Responsiveness stuff */
+@media (max-width: 1980px) {
+    .content button {
+        top: 33rem;
+        padding: 1.8rem 9.8rem;
+
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow: visible;
+    }
+
+    .content h1 {
+        font-size: 6vw;
+        top: 18%;
+    }
+
+    .content h2 {
+        font-size: 5vw;
+        top: 28%;
+    }
+
+    .content p {
+        font-size: 4vw;
+        top: 50%;
+    }
+}

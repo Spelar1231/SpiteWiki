@@ -5,17 +5,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
     <meta name="description" content="Spite Level Editor Wiki">
-    <link rel="icon" href="src/Media/Images/Website_Images/logo.png" class="logo-img">
+    <link rel="icon" href="Media/Images/Website_Images/logo.png" class="logo-img">
 
     <title>Spite Level Editor Wiki</title>
 
     <!-- Links to CSS files -->
-    <link rel="stylesheet" href="src/Code/CSS/main.css">
-    <link rel="stylesheet" href="src/Code/CSS/topbar.css">
-    <link rel="stylesheet" href="src/Code/CSS/footer.css">
-    <link rel="stylesheet" href="src/Code/CSS/welcome_page.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/topbar.css">
+    <link rel="stylesheet" href="CSS/welcome_page.css">
     <!-- Links to JS files -->
-    <script src="src/Code/JS/topbar.js" defer></script>
+    <script src="https://github.com/Spelar1231/SpiteWiki/blob/main/JS/topbar.js" defer></script>
     <!-- Links to fonts -->
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -28,7 +27,7 @@
 
         <div class="logo">
             <a href="index.html"></a>
-            <img src="src/Media/Images/Website_Images/logo.png" alt="An image of the E&S logo." class="logo-img">
+            <img src="Media/Images/Website_Images/logo.png" alt="An image of the E&S logo." class="logo-img">
             Spite Level Editor Wiki
         </div>
 
@@ -36,49 +35,57 @@
             <input type="text" placeholder="Search an entry...">
         </label>
 
+        <script>
+            // Opens a dropdown menu when the navbar buttons are pressed.
+            function OpenDropdown() {
+                const dropdown = document.getElementsByClassName("visibility")
+                dropdown.classList.toggle("visibility");
+            }
+
+        </script>
+
         <nav>
             <ul class="nav-links" style="height: 100%;">
                 <li>
-                    <button type="button" onclick="OpenDropdownMenu('setup-menu')">Setup</button>
-                    <ul id="setup-menu" class="dropdown-links">
-                        <li><a href="">Vanity Setup</a></li>
-                        <li><a href="">Spite Setup</a></li>
-                        <li><a href="">Scene Setup</a></li>
+                    <button id="nav-button" type="button" onclick="OpenDropdown()">Setup</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Vanity Setup</a></li>
+                        <li><a class="visibility" href="">Spite Setup</a></li>
+                        <li><a class="visibility" href="">Scene Setup</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button type="button" onclick="OpenDropdownMenu('tutorials-menu')">Tutorials</button>
-                    <ul id="tutorials-menu" class="dropdown-links">
-                        <li><a href="">Level Structure</a></li>
-                        <li><a href="">Geometry</a></li>
-                        <li><a href="">Texturing</a></li>
-                        <li><a href="">Doors</a></li>
-                        <li><a href="">Encounters</a></li>
-                        <li><a href="">Lighting</a></li>
-                        <li><a href="">Optimization</a></li>
-                        <li><a href="">Compiling</a></li>
+                    <button type="button" >Tutorials</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Level Structure</a></li>
+                        <li><a class="visibility" href="">Geometry</a></li>
+                        <li><a class="visibility" href="">Texturing</a></li>
+                        <li><a class="visibility" href="">Doors</a></li>
+                        <li><a class="visibility" href="">Encounters</a></li>
+                        <li><a class="visibility" href="">Lighting</a></li>
+                        <li><a class="visibility" href="">Optimization</a></li>
+                        <li><a class="visibility" href="">Compiling</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button type="button" onclick="OpenDropdownMenu('adv-tutorials-menu')">Advanced Tutorials</button>
-                    <ul id="adv-tutorials-menu" class="dropdown-links">
-                        <li><a href="">Skulls/Buttons</a></li>
-                        <li><a href="">Advanced Encounters</a></li>
-                        <li><a href="">Custom Assets</a></li>
-                        <li><a href="">Custom Scripts</a></li>
+                    <button type="button" onclick="OpenDropdown()">Advanced Tutorials</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Skulls/Buttons</a></li>
+                        <li><a class="visibility" href="">Advanced Encounters</a></li>
+                        <li><a class="visibility" href="">Custom Assets</a></li>
+                        <li><a class="visibility" href="">Custom Scripts<</a></li>
                     </ul>
                 </li>
                 <li>
-                    <button type="button">Components</button><!-- This button links to a webpage -->
+                    <button type="button" href="www.asd.com">Components</button><!-- This button links to a webpage -->
                 </li>
                 <li>
-                    <button type="button" onclick="OpenDropdownMenu('misc-menu')">Misc</button>
-                    <ul id="misc-menu" class="dropdown-links">
-                        <li><a href="">Credits</a></li>
-                        <li><a href="">Contribution</a></li>
-                        <li><a href="">Resources</a></li>
-                        <li><a href="">Repository</a></li>
-                        <li><a href="">Discord Server</a></li>
+                    <button type="button" onclick="OpenDropdown()">Misc</button>
+                    <ul class="dropdown-links">
+                        <li><a class="visibility" href="">Credits</a></li>
+                        <li><a class="visibility" href="">Contribution</a></li>
+                        <li><a class="visibility" href="">Resources</a></li>
+                        <li><a class="visibility" href="">Repository</a></li>
                     </ul>
                 </li>
             </ul>
@@ -95,7 +102,6 @@
 
 <!-- Text -->
 <div class="content">
-    <img src="src/Media/Images/Website_Images/spite-editor.png" alt="An image of the Spite Level Editor. If you are seeing this then something probably went wrong or you are using screen reader mode.">
     <div class="text">
         <!-- Title -->
         <h1>Spite Level Editor Wiki</h1>
@@ -110,10 +116,13 @@
         The wiki website has been created by <a>Alma</a> and the entries of the wiki have been created by <a>Alma</a>, <a>Doomah</a> and by our <a>contributors</a>.
         If you wish to contribute into the wiki, you can go into this <a>page</a> for more information.</p>
     </div>
+    <img src="Media/Images/Website_Images/spite-editor.png" alt="An image of the Spite Level Editor. If you are seeing this then something probably went wrong or you are using screen reader mode.">
 
     <button type="button">Start Tutorial</button>
 </div>
-</body>
+<<<<<<< Updated upstream
+=======
+
 
 <!-- Footer -->
 <footer>
@@ -157,7 +166,6 @@
                 <li><a href="">Custom Scripts</a></li>
             </ul>
         </div>
-        <h4 class="components-link">Components</h4>
         <div class="footer-column">
             <h4>Misc</h4>
             <ul>
@@ -169,4 +177,6 @@
         </div>
     </div>
 </footer>
+>>>>>>> Stashed changes
+</body>
 </html>
