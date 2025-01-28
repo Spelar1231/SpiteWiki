@@ -1,7 +1,5 @@
 # Components List
 
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
-
 # Introduction
 
 This is a list of all components in the SPITE Level Editor that are useful in creating maps.
@@ -20,7 +18,6 @@ Contributors:
 [triggered∞idiot (@triggeredidiot)](https://github.com/triggered0idiot)
 
 </details>
-
 
 # Lists
 

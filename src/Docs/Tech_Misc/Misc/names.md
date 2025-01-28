@@ -7,8 +7,6 @@ Ultrakill doesnt of course follow it's community in the enemies's names so thats
 
 # List
 
-<!-- Rewriten by Spelar dm me if this thing is wrong -->
-
 | Enemy Name | In-Editor Name |
 |-----------------------|----------------|
 |Filth                  |Zombie

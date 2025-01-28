@@ -7,7 +7,7 @@ Every good Ultrakill level has to have music, Otherwise it would leave levels bl
 
 `MusicManager` Is a gameobject thats a child of `StatsManager` its job is very apparent from it's name, It manages music in the level, Specifically Clean music and Combat music and music for bosses.
 
-If you used the statsmanager prefab from the [Basic Scene Setup](new-scene), it should be already set, and all you have to do is make `MusicChanger` triggers. But before that, let's explain each field of `MusicManager`.
+If you used the statsmanager prefab from the [Basic Scene Setup](scene-setup.md), it should be already set, and all you have to do is make `MusicChanger` triggers. But before that, let's explain each field of `MusicManager`.
 
 ---
 

@@ -1,7 +1,6 @@
 # Object activator and what they do.
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
 
-# Beginning
+# Description
 
 `ObjectActivator` is one of the most important tools under your belt of Ultrakill scripts. It allows you to simply activate a gameobject when the gameobject that has this script is activated (a chain), or more importantly, triggering things with a box collider that is set to a trigger within the same gameobject that has the script.
 
@@ -55,4 +54,4 @@ If the Game Object that has an Object Activator also has a trigger on it, it wil
 
 ---
 
-This gameobject runs a [ULTRAKILL Event](ULTRAKILL-Event)
+This gameobject runs a [ULTRAKILL Event](ULTRAKILL-Event.md)
