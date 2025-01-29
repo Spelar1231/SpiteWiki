@@ -21,7 +21,7 @@ Finally, it will let you select a function to run when the ULTRAKILL Event is tr
 
 ![Object Activator Example](https://coolboi21.github.io/Rude-Docs/Components/assets/ultrakill-event-example.png)
 
-This is an example where the Player gets teleported when the [Object Activator](object-activator.md)'s ULTRAKILL Event is triggered.
+This is an example where the Player gets teleported when the [Object Activator](Object_Activator)'s ULTRAKILL Event is triggered.
 
 ## On Dis Activate()
 Components that have a "deactivation part" (for example leaving an ObjectActivator's trigger with Disable On Exit set to true) runs these events.
@@ -29,7 +29,7 @@ Components that have a "deactivation part" (for example leaving an ObjectActivat
 In a case where `On Dis Activate()` runs, it also reverts the `To Activate Objects`, `To Dis Activate Objects` states. Objects in `To Activate Objects` become **in**active, and objects in `To Dis Activate Objects` become **active**.
 
 Notably used in:
-- [Object Activator](object-activator.md)
+- [Object Activator](Object_Activator)
 - Variable Watchers
 
 > !
