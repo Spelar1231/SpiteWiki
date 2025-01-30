@@ -110,24 +110,9 @@
 
 <div id="Markdown_text" class="markdown-text">
     <script type="module">
-        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
-        async function loadMarkdown(md_link) {
-            try {
-                const response = await fetch(md_link);
-                if (!response.ok) {
-                    // noinspection ExceptionCaughtLocallyJS
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                } else {
-                    const md_content = await response.text();
-                    document.getElementById('Markdown_text').innerHTML = marked.parse(md_content);
-                }
-            } catch (error) {
-                const errorMessage = `# An unexpected error has occurred. Please contact @almaa_1 on Discord.\n\n${error}`;
-                document.getElementById('Markdown_text').innerHTML = marked.parse(errorMessage);
-                console.error('Error loading Markdown:', error);
-            }
-        }
-        loadMarkdown('https://raw.githubusercontent.com/Spelar1231/SpiteWiki/refs/heads/main/src/Docs/Setup/Texturing.md');
+        import { loadMarkdownFromJSON } from "../../JS/Load_Markdown.js";
+
+        loadMarkdownFromJSON('Tutorials', 'Texturing');
     </script>
 </div>
 
