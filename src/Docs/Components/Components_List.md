@@ -1,6 +1,6 @@
 # Components List
 
-# Introduction
+## Introduction
 
 This is a list of all components in the SPITE Level Editor that are useful in creating maps.
 
@@ -19,7 +19,7 @@ Contributors:
 
 </details>
 
-# Lists
+## Lists
 
 <details>
 

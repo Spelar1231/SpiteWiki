@@ -1,5 +1,4 @@
 # Delayed Level Start
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
 
 # Tutorial
 

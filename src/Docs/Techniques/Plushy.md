@@ -1,13 +1,11 @@
 # Making Plushies
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
 
 # Beginning
 
-Making plushies is straight foward, All you have to do is search a already existing dev's plushy in your assets, Select it and do `CTRL + D` to dupe it, then for the duped prefab, press open prefab remove the model and add yours (and set the tag to `Item` ) and then change the audio as you need.
+Making plushies is straightfoward. All you have to do is search a already existing dev's plushy in your assets, select it and duplicate it by pressing `CTRL + D`. Then, press `open prefab`, swap the model to yours and set the tag to `Item`. If needed, you can change the pickup/throw audio.
 
 <div style="text-align: center;">
 	<figure>
 		<img src="https://github.com/layzyidiot/e-sw/blob/main/images/plushy.png?raw=true" alt="God" width="100%" height="100%">
 	</figure>
 </div>
-<!-- Oh forgive me Doomah for the crimes that i have made. -->

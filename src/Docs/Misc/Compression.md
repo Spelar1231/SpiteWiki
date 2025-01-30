@@ -1,7 +1,5 @@
 # How to compress levels to share on discord or for EnvyDL
 
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
-
 # Beginning
 
 Discord has a small file size limit (25 MB), GitHub has a file size limit too (100 MB) and file sharing services such as Qiwi or MediaFire are either temporary or blocked in some countries.
@@ -41,9 +39,3 @@ EnvyDL is currently down and you can't upload your levels right now. However som
 
 >[!IMPORTANT]
 >Make sure that the Github Repo is public or we won't be able to upload your level.
-
-Tutorial by: Nebula(@thebluenebula)
-
-Put here by: Spelar(@spelar_)
-
-Subject to change

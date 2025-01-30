@@ -1,5 +1,4 @@
 <h1>Editor Setup</h1>
-<i><span style="color:FireBrick; font-size:20px;">Need help? Come to the Envy & Spite Discord server at <a href="https://discord.gg/RY8J67neJ9">https://discord.gg/RY8J67neJ9</a>!</span></i>
 
 > <strong>PREREQUISITES:</strong>
 [Unity 2019.4.40f1](https://unity.com/releases/editor/whats-new/2019.4.40#release-notes) ,
@@ -8,12 +7,12 @@
 
 ---
 
-# <b>Downloading the necessary requirements for <span style="color:#FF00FF">Vanity Reprise</span></b>
+# **Downloading the necessary requirements for <span style="color:#FF00FF">Vanity Reprise</span>**
 
 Head to the first link for <span style="color:#ADD8E6"><b>[DotNet SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)</b></span> and install the exe from the image below and run the setup.exe
 
 <div style="text-align: center;">
-	<img src="https://github.com/layzyidiot/e-sw/blob/main/images/1.png?raw=true" alt="Dotnet Webpage" width="75%" height="75%">
+	<img src="../../Media/Images/Wiki_Images/DotNet_Webpage.png?raw=true" alt="Dotnet Webpage" width="75%" height="75%">
 </div>
 
 

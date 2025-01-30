@@ -4,7 +4,7 @@
 
 'Screenshake' is a useful effect that can improve the level experience. Here you'll be able to learn how to use it.
 
-<img src="https://github.com/layzyidiot/e-sw/blob/main/images/Spelar_4.png?raw=true" alt="Screenshake" width="100%" height="100%">
+<img src="../../Media/Images/Wiki_Images/Screenshaker_Component.png" alt="Screenshake" width="100%" height="100%">
 
 * Amount - The intensity of the 'Screenshake'.
 
