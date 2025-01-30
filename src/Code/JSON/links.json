@@ -1,0 +1,48 @@
+{
+    "markdown_links": {
+
+        "Adv_Tutorials": {
+            "Custom_Terminal_Entry": "",
+            "Delayed_Level_Start": "",
+            "Plushy": ""
+        },
+
+        "Components": {
+            "Components_List": "https://raw.githubusercontent.com/Spelar1231/SpiteWiki/refs/heads/main/src/Docs/Components/Components_List.md",
+            "Object_Activator": "https://raw.githubusercontent.com/Spelar1231/SpiteWiki/refs/heads/main/src/Docs/Components/Object_Activator.md",
+            "Screenshake": "",
+            "Slow_Mo": "",
+            "Symbiote": "",
+            "TOTD_Challenge": "",
+            "ULTRAKILL_Events": ""
+        },
+
+        "Misc": {
+            "Compression": "",
+            "Enemy_Names": ""
+        },
+
+        "Setup": {
+            "Editor_Setup": "",
+            "Scene_Setup": "",
+            "Setup_Info": "",
+            "Vanity_Setup": ""
+        },
+
+        "Tutorials": {
+            "Checkpoints": "",
+            "Compiling": "",
+            "Encounters": "",
+            "Lighting": "",
+            "Music_Manager": "",
+            "Navigation_Mesh": "",
+            "Optimization": "",
+            "Probuilder_Tutorial": ""
+        }
+
+    },
+
+    "navigation_links": {
+
+    }
+}
