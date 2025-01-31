@@ -8,7 +8,8 @@ export async function loadMarkdownFromJSON(category, key) {
         }
 
         const jsonData = await jsonResponse.json();
-            const md_link = jsonData.markdown_links[category][key];
+        // exception ignore
+          const md_link = jsonData.markdown_links[category][key];
 
         if (!md_link) {
             throw new Error(`Markdown link for "${category}"/"${key}" not found in JSON.`);

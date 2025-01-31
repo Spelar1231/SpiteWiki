@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../../CSS/welcome_page.css">
     <!-- Links to JS files -->
     <script src="../../JS/topbar.js" defer></script>
+    <script src="https://rawcdn.githack.com/nextapps-de/flexsearch/0.7.31/dist/flexsearch.compact.js"></script>
     <!-- Links to fonts -->
     <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -43,6 +44,20 @@
 
         <label class="search-bar">
             <input type="text" id="search_bar" placeholder="Search an entry...">
+            <script>
+                const index = new FlexSearch({
+                    encode: 'icase',
+                    tokenize: "full",
+                    threshold: 5,
+                    resolution: 3,
+                });
+                index.add(1,"Test1");
+                index.add(2,"Test2");
+                index.add(3,"Test3");
+
+                const results = index.search("search engine");
+                console.log(results);
+            </script>
         </label>
 
         <nav>
