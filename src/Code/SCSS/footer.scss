@@ -1,0 +1,46 @@
+
+.footer-container {
+    background-color: #1e2a37;
+    display: flex;
+    justify-content: center;
+
+    img {
+        position: relative;
+        bottom: 5rem;
+        scale: 0.5 0.22;
+    }
+
+    p {
+        display: grid;
+        color: white;
+        text-decoration: none;
+        justify-content: center;
+    }
+
+    div {
+        text-align: center;
+        display: table-footer-group;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h4 {
+        display: grid;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        margin-left: 0.5rem;
+    }
+}
+
+.components-link {
+    position: relative;
+}

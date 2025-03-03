@@ -1,0 +1,63 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #486784;
+}
+
+/* Styling of the markdown text */
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto Thin", sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0 10%;
+}
+
+.markdown-text {
+  align-content: center;
+  text-align: center;
+  margin: 2% 10%;
+}
+.markdown-text img {
+  width: 50%;
+  height: auto;
+  margin: 1%;
+}
+
+blockquote {
+  align-content: center;
+  text-align: center;
+  margin: 1% 15%;
+  padding: 1%;
+  background-color: #3f5a73;
+  border-style: solid;
+  border-width: 0 0 0 5px;
+  border-color: #e60000;
+}
+
+a {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

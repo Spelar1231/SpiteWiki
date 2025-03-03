@@ -3,7 +3,7 @@ A documentation website made for Spite Level Editor.
 
 Developed by: Alma
 
-[Website](https://spelar1231.github.io/SpiteWiki)
+[Website](https://spitewiki.netlify.app/)
 
 ## Used libraries:
 

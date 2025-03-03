@@ -1,0 +1,134 @@
+/* Style of the welcome page */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style of the title */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    img {
+        width: auto;
+        height: 100vh;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    /* Title */
+    h1 {
+        font-family: "VCR OSD Mono", sans-serif;
+        font-size: 3vw;
+        font-weight: normal;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: visible;
+    }
+
+    /* Subtitle */
+    h2 {
+        font-family: "VCR OSD Mono", sans-serif;
+        font-size: 1.85vw;
+        font-weight: normal;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* About content */
+    p {
+        font-family: "VCR OSD Mono", sans-serif;
+        font-size: 1vw;
+        font-weight: normal;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        right: 10%;
+        text-align: justify;
+        overflow: visible;
+    }
+
+    a {
+        font-family: "VCR OSD Mono", sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    /* Style of the button */
+    button {
+        position: absolute;
+        top: 55rem;
+        background-color: #375570;
+        border: none;
+        color: white;
+        padding: 2rem 10rem;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 0.5rem;
+
+        font-family: "VCR OSD Mono", sans-serif;
+        font-size: 2rem;
+
+        cursor: pointer;
+    }
+}
+
+/* Responsiveness stuff */
+
+/*
+@media (max-width: 768px) {
+    body{
+        overflow: visible;
+    }
+
+    .content {
+        h1 {
+            font-size: 6vw;
+            top: 18%;
+        }
+
+        h2 {
+            font-size: 5vw;
+            top: 28%;
+        }
+
+        p {
+            font-size: 4vw;
+            top: 50%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow: visible;
+    }
+
+    .content {
+        h1 {
+            font-size: 8vw;
+            top: 15%;
+        }
+
+        h2 {
+            font-size: 6.5vw;
+            top: 25%;
+        }
+
+        p {
+            font-size: 4.5vw;
+            top: 45%;
+        }
+    }
+}
+*/

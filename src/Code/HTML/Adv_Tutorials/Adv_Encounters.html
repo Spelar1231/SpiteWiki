@@ -17,10 +17,11 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Spite Level Editor Wiki" />
 
-    <!-- Links to CSS files -->
-    <link rel="stylesheet" href="../../CSS/main.css">
-    <link rel="stylesheet" href="../../CSS/topbar.css">
-    <link rel="stylesheet" href="../../CSS/footer.css">
+    <!-- Links to SCSS files -->
+    <link rel="stylesheet" href="../../SCSS/main.css">
+    <link rel="stylesheet" href="../../SCSS/topbar.css">
+    <link rel="stylesheet" href="../../SCSS/footer.css">
+    <link rel="stylesheet" href="../../SCSS/welcome_page.css">
     <!-- Links to JS files -->
     <script src="../../JS/topbar.js" defer></script>
     <!-- Links to fonts -->
@@ -34,7 +35,7 @@
     <div class="container">
 
         <div class="logo">
-            <a href="../../../../index.html">
+            <a href="../../../index.html">
                 <img src="../../../Media/Images/Website_Images/logo.png" alt="An image of the E&S logo." class="logo-img">
                 Spite Level Editor Wiki
             </a>
@@ -109,9 +110,24 @@
 
 <div id="Markdown_text" class="markdown-text">
     <script type="module">
-        import { loadMarkdownFromJSON } from "../../JS/Load_Markdown.js";
-
-        loadMarkdownFromJSON('Adv_Tutorials', 'Adv_Encounters');
+        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+        async function loadMarkdown(md_link) {
+            try {
+                const response = await fetch(md_link);
+                if (!response.ok) {
+                    // noinspection ExceptionCaughtLocallyJS
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                } else {
+                    const md_content = await response.text();
+                    document.getElementById('Markdown_text').innerHTML = marked.parse(md_content);
+                }
+            } catch (error) {
+                const errorMessage = `# An unexpected error has occurred. Please contact @almaa_1 on Discord.\n\n${error}`;
+                document.getElementById('Markdown_text').innerHTML = marked.parse(errorMessage);
+                console.error('Error loading Markdown:', error);
+            }
+        }
+        loadMarkdown('https://raw.githubusercontent.com/Spelar1231/SpiteWiki/refs/heads/main/src/Docs/Setup/Adv_Encounters.md');
     </script>
 </div>
 
